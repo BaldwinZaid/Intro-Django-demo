@@ -19,6 +19,9 @@ from django.urls import path, include
 from appdemo1.views import datos
 
 urlpatterns = [
+
+    path('' , include('appdemo1.urls')),
     path('admin/', admin.site.urls),
     path('mostrar/', include('appdemo1.urls'))
+    
 ]
